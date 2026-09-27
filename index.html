@@ -13,7 +13,7 @@
     .hero{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:50px;align-items:center}.hero .profile-photo{grid-column:2;grid-row:1 / span 5;width:260px;height:260px;margin:0;justify-self:end}.hero .eyebrow,.hero h1,.hero .lede,.hero .actions{grid-column:1}.card-grid details{background:#e9eee5;padding:26px;min-height:220px}.card-grid summary{cursor:pointer;list-style:none}.card-grid summary::-webkit-details-marker{display:none}.card-grid summary h3{margin:36px 0 10px}.card-grid details p{color:var(--muted);margin-top:18px}.card-grid details[open]{outline:2px solid #829e27;outline-offset:-2px}.card-grid details[open] summary h3:after{content:'  —';color:#829e27}@media(max-width:720px){.hero{display:block}.hero .profile-photo{width:190px;height:190px;margin:0 0 28px;display:block}.card-grid details{min-height:0}}
   </style>
   <style>
-    .hero{padding:72px 24px 58px;max-width:1180px;grid-template-columns:minmax(0,1fr) 300px}.hero .profile-photo{width:300px;height:300px}.hero h1{font-size:clamp(3rem,7vw,6.4rem)}.timeline{padding:78px 24px;border-bottom:1px solid var(--line)}.timeline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.timeline-card{background:#f0eafb;padding:24px}.timeline-card strong{display:block;font-size:1.15rem}.timeline-card span{color:var(--muted);font-size:.85rem}.timeline-card p{color:var(--muted);margin-bottom:0}.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:26px 24px;gap:30px}.stats strong{display:block;font-size:1.7rem}.stats span{color:var(--muted);font-size:.9rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.chips span{border:1px solid #d7cfee;border-radius:99px;padding:7px 13px;color:#5d5570;font-size:.85rem}.group{margin-top:72px}.group:first-of-type{margin-top:36px}.group>.card-grid{margin-top:24px}.card-grid details{background:#f0eafb}.card-grid details[open]{outline-color:var(--violet)}.card-grid details[open] summary h3:after{color:var(--violet)}@media(max-width:720px){.hero{padding-top:48px}.hero .profile-photo{width:210px;height:210px}.timeline-grid,.stats,.split{grid-template-columns:1fr}}
+    .hero{padding:72px 24px 58px;max-width:1180px;grid-template-columns:minmax(0,1fr) 300px}.hero .profile-photo{width:300px;height:300px}.hero h1{font-size:clamp(3rem,7vw,6.4rem)}.timeline{padding:78px 24px;border-bottom:1px solid var(--line)}.timeline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.timeline-card{background:#f0eafb;padding:24px}.timeline-card strong{display:block;font-size:1.15rem}.timeline-card span{color:var(--muted);font-size:.85rem}.timeline-card p{color:var(--muted);margin-bottom:0}.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:26px 24px;gap:30px}.stats strong{display:block;font-size:1.7rem}.stats span{color:var(--muted);font-size:.9rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.chips span{border:1px solid #d7cfee;border-radius:99px;padding:7px 13px;color:#5d5570;font-size:.85rem}.about-copy{align-self:end;max-width:500px}.about-copy p{color:var(--muted)}.group{margin-top:72px}.group:first-of-type{margin-top:36px}.group>.card-grid{margin-top:24px}.card-grid details{background:#f0eafb}.card-grid details[open]{outline-color:var(--violet)}.card-grid details[open] summary h3:after{color:var(--violet)}@media(max-width:720px){.hero{padding-top:48px}.hero .profile-photo{width:210px;height:210px}.timeline-grid,.stats,.split{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -45,12 +45,12 @@
         <article class="timeline-card">
           <strong>Cisco Systems</strong>
           <span>Software Engineer (Grade 08) · Aug 2024 – Present</span>
-          <p>AgenticOps, multimodal event grounding, Graph RAG, multi-agent code review, and edge intelligence.</p>
+          <p>AI agents for network diagnosis, audio evidence retrieval for data-center faults, and edge systems that support vision workloads.</p>
         </article>
         <article class="timeline-card">
           <strong>OnePlus</strong>
           <span>Engineer L3 · Jul 2023 – Aug 2024</span>
-          <p>On-device generative vision, ML failure detection, and LLM-assisted diagnostics.</p>
+          <p>Object identification and segmentation for image editing on mobile devices.</p>
         </article>
         <article class="timeline-card">
           <strong>Tata Consultancy Services</strong>
@@ -65,7 +65,10 @@
         <p class="eyebrow">Academic path</p>
         <h2>MS by Research<br><em>Indian Institute of Technology Madras</em></h2>
       </div>
-      <p>Thesis: Federated Learning for VNF auto-scaling and placement in 5G-and-beyond networks. Advisor: Prof. Krishna Moorthy Sivalingam. Funded by the VMware University Research Fund, USA.</p>
+      <div class="about-copy">
+        <p>At IIT Madras, I studied how to forecast network demand across providers without sharing their traffic data, then used those forecasts to decide when and where to add network services. The work led to three first-author IEEE papers. Advisor: Prof. Krishna Moorthy Sivalingam. Supported by the VMware University Research Fund, USA.</p>
+        <p>I graduated first in Information Technology at Terna Engineering College and earned All India Rank 502 in GATE Computer Science 2020 (97,481 candidates).</p>
+      </div>
     </section>
 
     <section class="stats">
@@ -81,7 +84,7 @@
       </div>
       <div>
         <p>I am interested in visual models that learn from incomplete supervision, multimodal systems that connect images, audio, language, graphs, and sensor evidence, agents that reason and use tools without losing provenance, and distributed learning systems that operate under privacy, latency, memory, and communication constraints.</p>
-        <p>At IIT Madras, I designed a federated learning framework for VNF auto-scaling using LSTM/GRU forecasting and Time-GAN synthetic telemetry, and developed a federated deep-learning system for dynamic VNF placement across multi-cloud environments without sharing raw operator data.</p>
+        <p>My IIT Madras research began with a practical constraint: network providers could not share private traffic data. I studied federated forecasting, in which each provider trains locally and shares model updates, and then used the forecasts to investigate when to scale services and where to place them. The published experiments used public traces and synthetic data to represent separate providers.</p>
         <div class="chips">
           <span>Computer vision</span><span>Multimodal AI</span><span>Agentic AI</span><span>Distributed AI</span><span>Generative AI</span><span>Speech AI</span><span>LLMs &amp; NLP</span><span>Graph RAG</span><span>Federated learning</span><span>Multi-agent systems</span>
         </div>
@@ -95,17 +98,17 @@
         <h2>Cisco Systems</h2>
         <p class="muted">Agentic systems, network intelligence, engineering AI, and edge platforms.</p>
         <div class="card-grid">
-          <details open>
+          <details>
             <summary><span class="number">01</span><h3>AgenticOps: Autonomous Network Reasoning</h3></summary>
-            <p>Designed monitoring, diagnostic, verification, and remediation agents coordinated by state machines and causal Graph RAG over topology, telemetry, logs, configurations, and incidents. Added policy checks, confidence thresholds, human approval, rollback, and post-action verification; reduced targeted diagnosis from approximately 60 minutes to 5 minutes and active token overhead by more than 40%.</p>
+            <p>When a network fails, an engineer may need to piece together measurements, device logs, configuration changes, and past incidents. I designed agents that gather this evidence, test possible causes, verify a diagnosis, and prepare a response. A graph of devices and their connections helps the agents follow real dependencies. Human approval, rollback, and post-action checks guard any proposed change. For targeted incidents, diagnosis fell from about 60 minutes to 5 minutes while active token use fell by more than 40%.</p>
           </details>
           <details>
-            <summary><span class="number">02</span><h3>LA-RAG Adaptation for Data-Center Acoustic Monitoring</h3></summary>
-            <p>Adapted and deployed the published LA-RAG architecture for a Cisco data-center use case. The modified system grounds alarm and fan-noise events in time, stores timestamped event records, and retrieves supporting audio evidence for engineer questions over long operational recordings.</p>
+            <summary><span class="number">02</span><h3>Long-Audio QA for Data-Center Equipment</h3></summary>
+            <p>An alarm tone or change in fan noise may last only seconds within hours of data-center recordings, yet help an engineer investigate a fault. I adapted and deployed a long-audio question-answering pipeline for this use case: detected sounds are indexed as timestamped events, an engineer's question retrieves relevant records and recording intervals, and the answer is grounded in that audio evidence instead of the entire recording.</p>
           </details>
           <details>
             <summary><span class="number">03</span><h3>Graph RAG Agent for PHY/Port Debugging</h3></summary>
-            <p>Modeled Port → PHY → SerDes → ASIC dependencies and combined structured CLI parsing with graph traversal to explain link flaps, CRC bursts, and SFP failures. Reduced average engineer triage time from approximately 60 minutes to 5 minutes for complex PHY faults.</p>
+            <p>Built a graph-guided assistant for physical network faults. It connects a port to the hardware components behind it, combines that map with operational data, and helps engineers trace causes of unstable links or corrupted traffic. This is a separate, hardware-focused investigation tool from AgenticOps.</p>
           </details>
           <details>
             <summary><span class="number">04</span><h3>AI-Powered Code Review Platform</h3></summary>
@@ -117,22 +120,22 @@
           </details>
           <details>
             <summary><span class="number">06</span><h3>Hot-Pluggable Edge Intelligence Platform</h3></summary>
-            <p>Brought up the Robotnik compute module for AI workloads through NFS enablement, containerized deployment, datapath design, resource telemetry, and workload benchmarking on a CN10208-based SONiC platform.</p>
+            <p>Helped develop a hot-pluggable compute module that adds capacity to an industrial network switch for LLM and vision applications. I worked on shared-storage access, container support, data paths, telemetry, and workload benchmarking so AI services could run close to the network.</p>
+          </details>
+          <details>
+            <summary><span class="number">07</span><h3>Frame Preemption for Camera Traffic</h3></summary>
+            <p>Implemented IEEE 802.1Qbu frame preemption for high-priority camera traffic. If a lower-priority frame is already crossing the link, the switch pauses it, sends the camera frame, then resumes the interrupted transmission. I worked on firmware, express and preempted traffic queues, per-port configuration, and link-partner negotiation. This reduces the wait for visual data used by time-sensitive applications.</p>
           </details>
         </div>
       </div>
 
       <div class="group">
         <h2>OnePlus</h2>
-        <p class="muted">On-device generative AI and intelligent diagnostics.</p>
+        <p class="muted">Computer vision for image editing on mobile devices.</p>
         <div class="card-grid">
           <details>
-            <summary><span class="number">07</span><h3>On-Device Generative Image Editing</h3></summary>
-            <p>Contributed to a Magic Eraser-style feature for intelligent object removal and coherent background synthesis using generative ML models on mobile devices.</p>
-          </details>
-          <details>
-            <summary><span class="number">08</span><h3>ML-Assisted Failure Diagnosis</h3></summary>
-            <p>Built structured failure-detection pipelines and lightweight LLM-assisted log analysis to accelerate mobile-system root-cause identification.</p>
+            <summary><span class="number">08</span><h3>Object Selection for On-Device Image Editing</h3></summary>
+            <p>At OnePlus, I worked on the visual-selection stage of a mobile editing feature: identifying the object a user wanted removed and segmenting the pixels that belonged to it. An inaccurate boundary would remain visible in the finished image, even if the missing background was synthesized well. The work required attention to visual quality within a phone's memory and response-time limits.</p>
           </details>
         </div>
       </div>
@@ -154,7 +157,7 @@
         <div class="card-grid">
           <details>
             <summary><span class="number">10</span><h3>FathomNet Positive-Unlabeled Marine Object Detection</h3></summary>
-            <p>Participated in the FathomNet-CLEF 2026 Kaggle challenge and implemented a positive-unlabeled pipeline, informed by the publicly released FAU CAAI approach, using expanded supervision, filtered pseudo-labels, complementary detectors, multi-resolution inference, and merged predictions. I also proposed a controlled INR experiment for scale-aware small-object detection.</p>
+            <p>In the FathomNet-CLEF 2026 Kaggle challenge, many visible marine animals were not annotated; treating them as background could teach a detector to miss real objects. I implemented a positive-unlabeled pipeline that expanded training supervision, filtered candidate pseudo-labels, combined complementary detectors, and merged predictions across image resolutions. I also proposed a controlled implicit-neural-representation experiment to test whether it helps detect small organisms across scales; that experiment is a proposal, not a reported result.</p>
           </details>
           <details>
             <summary><span class="number">11</span><h3>Extractive Question Answering with DistilBERT</h3></summary>
@@ -178,17 +181,17 @@
         <article>
           <span>CloudNet 2022</span>
           <h3>Federated Learning approach for Auto-scaling of Virtual Network Function resource allocation in 5G-and-Beyond Networks</h3>
-          <p>2022 IEEE International Conference on Cloud Networking, pp. 242–246.</p>
+          <p>2022 IEEE International Conference on Cloud Networking, pp. 242–246. Compared federated LSTM and GRU demand forecasting with centralized learning while keeping each provider's traffic data local; GAN-generated traces helped address limited 5G data.</p>
         </article>
         <article>
           <span>FNWF 2023</span>
           <h3>VNF Placement based on Resource Usage Prediction using Federated Deep Learning Techniques</h3>
-          <p>2023 IEEE Future Networks World Forum.</p>
+          <p>2023 IEEE Future Networks World Forum. Predicted the resources virtual network functions would need across multiple clouds, compared federated predictions with centralized and conventional models, and integrated the estimates into a placement algorithm.</p>
         </article>
         <article>
           <span>IEEE Access · 2024</span>
           <h3>Design and Analysis of VNF Scaling Mechanisms for 5G-and-Beyond Networks using Federated Learning</h3>
-          <p>Vol. 12, pp. 129826–129843. DOI: 10.1109/ACCESS.2024.3458437.</p>
+          <p>Vol. 12, pp. 129826–129843. DOI: 10.1109/ACCESS.2024.3458437. Extended the forecasting research with a discrete-event simulator comparing proactive scaling, reactive scaling, and no scaling across traffic workloads.</p>
         </article>
       </div>
     </section>
