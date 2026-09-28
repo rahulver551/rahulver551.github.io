@@ -214,11 +214,11 @@
           </details>
           <details>
             <summary><span class="card-meta"><span class="number">11</span><span class="project-tag">NLP</span></span><h3>Extractive Question Answering with DistilBERT</h3></summary>
-            <p>Fine-tuned DistilBERT on SpokenSQuAD using linear learning-rate decay and automatic mixed precision, improving test F1 from 52.25 to 54.05.</p>
+            <div class="project-body"><p><strong>Problem</strong> Extractive question answering requires selecting the exact answer span from a passage; inconsistent character offsets in SpokenSQuAD can produce incorrect training labels.</p><p><strong>My work</strong> Parsed the question, context, and answer records; corrected answer end positions; and mapped character spans to token start and end positions. I then fine-tuned a pretrained DistilBERT question-answering model with AdamW, testing linear learning-rate decay and automatic mixed precision.</p><p><strong>Result</strong> Test F1 rose from 52.25 for the baseline to 54.05 with the training changes.</p></div>
           </details>
           <details>
             <summary><span class="card-meta"><span class="number">12</span><span class="project-tag">Generative Models</span></span><h3>GAN Comparison: DCGAN vs. WGAN vs. ACGAN</h3></summary>
-            <p>Implemented and compared three GAN architectures on CIFAR-10 across 40 epochs. DCGAN achieved the best FID of 206.19 versus 259.59 for WGAN and 281.99 for ACGAN.</p>
+            <div class="project-body"><p><strong>Question</strong> How do convolutional, Wasserstein, and class-conditioned GANs compare in training behavior and image quality on CIFAR-10?</p><p><strong>My work</strong> Implemented DCGAN, WGAN, and ACGAN; tracked generator and discriminator losses; and compared generated samples using Fr&eacute;chet Inception Distance (FID) over 40 epochs.</p><p><strong>Result</strong> In this experiment, DCGAN had the lowest observed FID (206.19). Its FID after 40 epochs was 246.72, compared with 299.20 for WGAN and 324.32 for ACGAN.</p></div>
           </details>
         </div>
       </div>
